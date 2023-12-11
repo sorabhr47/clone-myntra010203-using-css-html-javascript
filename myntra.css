@@ -1,0 +1,208 @@
+ *{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+ }
+header{
+  display:flex;
+  height:80px;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 1%;
+  box-shadow:0 4px 12px 0 rgba(0,0,0,.05);
+}
+.logo_container{
+  height: 36px;
+}
+.logo_container img{
+  height:100%;
+}
+.nav_bar{
+  display:flex;
+  font-size:14px;
+  font-weight:700;
+  text-transform:uppercase;
+  justify-content:space-around;
+  min-width:500px;
+}
+.nav_bar a{
+  text-decoration:none;
+  color:#282c3f;
+}
+.nav_bar a sup{
+  font-size:10px;
+  color:#ff3f6c
+}
+.search_bar{
+  display:flex;
+  height:40px;
+  min-width:200px;
+  background-color:#f5f5f6;
+  border-radius:4px;
+  align-items :center;
+  padding-left:6px;
+  
+}
+.icon{
+  padding-right:10px;
+}
+.search_text{
+  flex-grow:1;
+  background-color:#f5f5f6;
+  border-radius:4px;
+  border:0;
+}
+.search_text:focus{
+  outline:none;
+}
+.action_bar{
+  display:flex;
+  min-width:200px;
+  justify-content:space-evenly;
+}
+.action_container{
+  display:flex;
+  flex-direction:column;
+  align-items: center ;
+  font-size:12px;
+  font-weight:700px;
+}
+.action_container a{
+  text-decoration:none;
+}
+.gif_banner{
+ height:150px;
+ align-items:center;
+ margin-bottom:0px;
+}
+.gif_banner img{
+  height:150px;
+  padding:1% 7%;
+}
+
+.banner{
+  max-height:500px;
+  margin:1px;
+  justify-content:center;
+}
+.slider-banner{
+  position:relative;
+  max-width:100%;
+  padding: 10px 90px 5px 90px; 
+}
+.slider{
+  display:flex;
+  aspect-ratio: 16/9;
+  overflow-x:auto;/*this give a box to slidder*/
+  scroll-snap-type: x mandatory;
+  scroll-behavior:smooth;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none; /*help to plsce dots on screen*/
+}
+.slider img{
+  flex: 1/*for equal size*/ 0 100%;/*this will fit the img to box*display:display*/
+  scroll-snap-align:start;/*this will give feature of move to next imag when we try to slide*/
+  object-fit:cover;/*this will fit the image as per frame*/
+}
+.slider-nav{
+  display:flex;
+  column-gap:1rem;/*this give the gap between pointer*/
+  position: absolute;
+  bottom :1.25rem;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:1;
+}
+.slider-nav a{
+  width:0.5rem;
+  height:0.5rem;
+  border-radius:50%;
+  background-color:#fff;
+  opacity:0.75;
+  transition:opacity ease 250ms;
+}
+.slider-nav a:hover{
+  opacity:1;
+}
+.category_heading{
+  text-transform:uppercase;
+  color:#3e4152;
+  letter-spacing:0.15em;
+  font-size:1.8em;
+  margin:50px 0 50px 0px;
+  max-height:5em;
+  font-weight:700;
+}
+.category_items{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.sale_item{
+  width:200px;
+}
+
+.gif_banner{
+ height:80px;
+ width:100%;
+ align-items:center;
+ padding:1% 8%;
+  margin:1px;
+}
+.gif_banner img{
+height:80px; 
+}
+
+.ads{
+   height:160px;
+   align-items:center;   
+}
+.ads img{
+  height:160px;
+  margin-left:50px;
+}
+
+.footer_container{
+  display:flex;
+  justify-content:space-evenly;
+  background-color:#FAFBFC;
+  padding:30px 0px 40px 30px;
+}
+.footer_column{
+  display:flex;
+  flex-direction:column;
+}
+.footer_column h4{
+  margin-bottom:20px;
+}
+.footer_column a{
+  padding-top:12px;
+  color:#282c3f;
+  font-size:15px;
+  text-decoration:none;
+}
+.app_ads{
+  height:50px;
+}
+.app_links img{
+  height:50px;
+  width:150px;
+}
+.social_links img{
+  height:25px;
+  width:25px;
+  margin:2%;
+}
+#keep{
+ margin-top:20px;
+}
+
+.copyright{
+  color:#94969f;
+  text-align:center;
+  padding:10px;
+}
